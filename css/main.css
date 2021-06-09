@@ -26,7 +26,7 @@ h3 {
 }
 h1 {
 	font-size: 1.875em;
-	border-bottom: 3px solid #77a466;
+	border-bottom: 2px solid #77a466;
 	display: flex;
 	justify-content: center;
 }
@@ -46,13 +46,12 @@ p {
 /*The widths are in a percentage!*/
 header {
 	width: 90%;
-	justify-content: center;
-	align-items: center;
 }
 
 header h1 {
 	margin: 0;
 	padding: 38px 0;
+	display: flex;
 	justify-content: center;
 }
 header h1 span {
@@ -60,8 +59,9 @@ header h1 span {
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 26px 0;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
@@ -69,20 +69,20 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 0.875em;
-	padding: 0 10px;
+	font-size: 0.95em;
 	display: flex;
 	justify-content: center;
+	
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	padding: 15px 2px
 }
 
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	justify-content: flex-start;
 }
 
 .main-image {
@@ -112,24 +112,19 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	height: auto;
 	border-top: 1px solid #eee;
-	justify-content: flex-start;
-	flex-flow: column wrap;
 }
 
 .section-one h3 {
-	padding: 10px 0;
+	padding: 7px 0;
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+
 }
 
 .section-two h3,
 .section-three h3  {
-	justify-content: flex-start;
 }
 
 .menu {
@@ -144,12 +139,14 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 21px;	
+	line-height: 21px;
+	padding: 0 0;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding: 0 0;
 }
 
 /*The widths are in a percentage!*/
