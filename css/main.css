@@ -46,6 +46,8 @@ p {
 /*The widths are in a percentage!*/
 header {
 	width: 90%;
+	display: flex;
+	flex-direction: column;
 }
 
 header h1 {
@@ -83,6 +85,8 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
+	display: flex;
+	flex-direction: column;
 }
 
 .main-image {
