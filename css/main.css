@@ -15,6 +15,7 @@ body {
 	width: 90%;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -27,9 +28,9 @@ h3 {
 h1 {
 	font-size: 1.875em;
 	border-bottom: 2px solid #77a466;
-	display: flex;
-	justify-content: center;
+	text-align: center;
 }
+
 h2 {
 	font-size: 1.125em;
 }
@@ -45,7 +46,7 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -53,8 +54,6 @@ header {
 header h1 {
 	margin: 0;
 	padding: 38px 0;
-	display: flex;
-	justify-content: center;
 }
 header h1 span {
 	color: #77a466;
@@ -167,4 +166,34 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 1em;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+	bottom-section {
+
+	}
+	section-one {
+
+	}
+	section-two {
+
+	}
+	section-three {
+
+	}
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+	header h1 {
+		width: ;
+		padding: ;
+		border-bottom: ;
+		text-align: ;
+	}
+
+	nav {
+		
+	}
 }
