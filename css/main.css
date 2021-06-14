@@ -1,19 +1,21 @@
 html {
 	font-size: 16px;
 }
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: column wrap;
 }
 
-.container{
+.container {
 	max-width: 1200px;
 	width: 90%;
 	justify-content: center;
+	display: flex;
+	margin: 0 auto;
 	align-items: center;
 	flex-flow: row wrap;
 }
@@ -25,9 +27,9 @@ h3 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+
 h1 {
 	font-size: 1.875em;
-	border-bottom: 2px solid #77a466;
 	text-align: center;
 }
 
@@ -41,26 +43,33 @@ h3 {
 p {
 	font-size: 0.875em;
 	line-height: 21px;
-    padding: 0 30px;
+    padding: 0;
 }
 
 /*The widths are in a percentage!*/
 header {
 	width: 100%;
 	display: flex;
+	margin: 0 auto;
+	align-items: center;
 	flex-direction: column;
+	flex-flow: row wrap;
 }
 
 header h1 {
+	width: 100%;
 	margin: 0;
-	padding: 38px 0;
+	padding: 20px 20px 20px 20px;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 26px 0;
+	width: 100%;
+	padding: 0 0 10px 0;
+	text-align: center;
 }
 
 header nav ul {
@@ -70,7 +79,7 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 0.95em;
+	font-size: .875em;
 	display: flex;
 	justify-content: center;
 	
@@ -84,15 +93,23 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+}
+
+.top-section {
+	flex-direction: column;
+}
+
+.bottom-section {
+	flex-flow: column nowrap;
 }
 
 .main-image {
 	height: auto;
 }
 .main-image img {
-	display: flex;
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 	border-top: 3px solid #77a466;
@@ -102,19 +119,22 @@ header nav ul li a{
 	height: auto;
 }
 .main-title h2 {
-	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
 }
+
 .main-title p {
 	padding: 0;
 	font-size: 1em;
 	line-height: 25px;
+	
 }
 
 .section-one,
 .section-two,
 .section-three {
+	width: 100%;
+	line-height: 25px;
 	border-top: 1px solid #eee;
 }
 
@@ -122,12 +142,9 @@ header nav ul li a{
 	padding: 7px 0;
 }
 
-.section-two {
-
-}
-
 .section-two h3,
 .section-three h3  {
+	
 }
 
 .menu {
@@ -142,25 +159,26 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 21px;
-	padding: 0 0;
+	line-height: 1.3125em;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
-	padding: 0 0;
 }
 
 /*The widths are in a percentage!*/
 footer {
 	border-top: 3px solid #eee;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	padding-top: 15px;
 }
+
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
@@ -170,30 +188,67 @@ footer span {
 
 @media all and (min-width:768px) {
     /* Tablet styles here */
-	bottom-section {
 
-	}
-	section-one {
-
-	}
-	section-two {
-
-	}
-	section-three {
-
-	}
+header h1 {
+	width: 100%;
+	text-align: center;
 }
- 
+.section-one, 
+.section-two, 
+.section-three {
+	flex-basis: 33.33%;
+	border-top: none;
+}
+
+.bottom-section {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+	
+.section-two {
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	
+}
+.section-two h3,
+.section-three h3 {
+	padding: 10px 20px;
+	
+}
+ß.section-two h3,p {
+	padding: 5px 20px;
+}
+footer {
+	border-top: none;
+}
+
+
 @media all and (min-width:1200px) {
     /* Desktop styles here */
-	header h1 {
-		width: ;
-		padding: ;
-		border-bottom: ;
-		text-align: ;
-	}
 
-	nav {
+	header {
+		display: flex;
+		justify-content: space-between;
 		
-	}
+}
+	header h1 {
+		width: 40%;
+		padding: 40px 10px;
+		border-bottom: none;
+		text-align: left;
+}
+	header nav ul {
+		display: flex;
+
+		justify-content: space-between;
+}
+	header nav {
+		width: 40%;
+		padding: 0px;
+}
+
 }
